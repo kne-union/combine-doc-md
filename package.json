@@ -1,6 +1,6 @@
 {
   "name": "@kne/combine-doc-md",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "用于将components里面的组件doc生成的README.md合并起来插入根目录的md文件中",
   "main": "index.js",
   "bin": {
