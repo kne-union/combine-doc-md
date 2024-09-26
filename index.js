@@ -16,7 +16,7 @@ module.exports = async options => {
     cwd: path.resolve(process.cwd(), componentsPath)
   });
 
-  const contentList = await Promise.all(fileList.map(filePath => fs.readFile(path.resolve(componentsPath, filePath), 'utf-8')));
+  const contentList = await Promise.all(fileList.reverse().map(filePath => fs.readFile(path.resolve(componentsPath, filePath), 'utf-8')));
 
   const content = contentList.join(`
 ${split}
